@@ -60,7 +60,7 @@ namespace ConsoleApp5
              {
                  Console.WriteLine("TAK");
              }
-             else if (b>a && a<c && c < b)
+             else if (b>a && a<c && c<b)
              {
                  Console.WriteLine("TAK");
              }
