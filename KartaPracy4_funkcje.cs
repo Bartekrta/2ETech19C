@@ -43,23 +43,45 @@ namespace ConsoleApp5
             alist.Add(n);
             return alist;
         }
+        public static int Zad2(int n)
+        {
+            int sumaCyfr = 0, cyfra = 0;
+            while (n > 0)
+            {
+                cyfra = n % 10;
+                sumaCyfr += cyfra;
+                n = n / 10;
+            }
+            return sumaCyfr;
+        }
+        public static int silnia(int n)
+        {
+            if(n==0) return 1;
+            return n * silnia(n - 1);
+        }
+        public static int Fibo(int n)
+        {
+            if (n == 0) return 0;
+            if (n < 2) return 1;
+            return Fibo(n - 1) + Fibo(n - 2);
+        }
         static void Main()
         {
-            //ZAD KP1Z1
+            //ZAD 1 KP1Z1
             /*int a = int.Parse(Console.ReadLine()),
                 b = int.Parse(Console.ReadLine());
             Console.WriteLine(kp1z1(a,b));*/
-            //ZAD KP2Z2
+            //ZAD 1 KP2Z2
             /*int a = int.Parse(Console.ReadLine());
             Console.WriteLine(kp2z2(a) ? "TAK":"NIE");*/
-            //ZAD KP2z6
+            //ZAD 1 KP2z6
             /*int a = int.Parse(Console.ReadLine()),
                 p = int.Parse(Console.ReadLine());
             Console.WriteLine(kp2z6(a,p) ? "TAK":"NIE");*/
-            //ZAD KP3z1
+            //ZAD 1 KP3z1
             /*int n = int.Parse(Console.ReadLine());
             kp3z1(n);*/
-            //KP3z3
+            //ZAD 1 KP3z3
             /*int n = int.Parse(Console.ReadLine());
             ArrayList dzielniki = new ArrayList();
             dzielniki = kp3z3(n);
@@ -68,6 +90,16 @@ namespace ConsoleApp5
             {
                 Console.WriteLine(a + " ");
             }*/
+
+            //ZADANIE 2
+            /*int n = int.Parse(Console.ReadLine());
+            Console.WriteLine(Zad2(n));*/
+            //ZADANIE 3
+            /*int n = int.Parse(Console.ReadLine());
+            Console.WriteLine(silnia(n));*/
+            //ZADANIE 4
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine(Fibo(n));
         }
         
     }
