@@ -55,14 +55,14 @@ namespace KartaPracy3B
             /*Console.Write("Podaj kwote wejściową: ");
             int w = int.Parse(Console.ReadLine());
             Console.Write("Podaj długość inwestycji: ");
-            double l = double.Parse(Console.ReadLine()) * 12;
+            double l = double.Parse(Console.ReadLine()) * 2;
             double wy = w;
             while (true)
             {
-                if (l - 12 >= 0)
+                if (l - 2 >= 0)
                 {
                     wy *= 1.06;
-                    l -= 12;
+                    l -= 2;
                 }
                 else
                 {
