@@ -88,7 +88,7 @@ namespace ConsoleApp1
     internal class Library_DataBase
     {
         public List<string> List_Of_Books = new List<string>();
-        public Book data;
+
         public void Add()
         {
             Console.WriteLine("Add");
@@ -110,6 +110,15 @@ namespace ConsoleApp1
             Console.WriteLine("Search");
         }
 
+    }
+
+    internal class Student
+    {
+        public string Class;
+    }
+    internal class Staff
+    {
+        public string Dept;
     }
     internal class Program
     {
