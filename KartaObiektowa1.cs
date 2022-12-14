@@ -70,3 +70,10 @@ class Material
         this.id = id;
     }
 }
+class Program
+{
+    static void Main(string[] args)
+    {
+        
+    }
+}
